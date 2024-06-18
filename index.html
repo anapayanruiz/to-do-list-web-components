@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./script.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .header-container {
+            background-color: #f44336;
+            padding: 30px 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .task-input-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .task-list {
+            background: #eee;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .task-list:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .task-element-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+    <div>
+        <div class="header-container">
+            <h2>My To Do List</h2>
+            <div class="task-input-container">
+                <task-input></task-input>
+                <add-button></add-button>
+            </div>
+        </div>
+    
+        <ul class="task-list">
+            <div class="task-element-container">
+                <task-element></task-element>
+                <delete-button></delete-button>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
