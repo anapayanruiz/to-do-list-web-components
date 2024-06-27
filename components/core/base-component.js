@@ -1,4 +1,5 @@
 export default class BaseComponent extends HTMLElement {
+
     constructor() {
         super();
         this.componentCsss = "";
